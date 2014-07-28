@@ -1,0 +1,207 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 14em;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #fff;
+  height: 45px;
+}
+.header__menu {
+  float: left;
+  width: 44px;
+  height: 44px;
+}
+.header__logo {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  text-align: center;
+  left: 50%;
+  margin-left: -75px;
+}
+.header__search {
+  float: right;
+  width: 44px;
+  height: 44px;
+}
+.header__search--button {
+  width: 30px;
+}
+
+.today-date {
+  height: 30px;
+  background: red;
+  padding: 5px 0;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.highlight {
+  background: #444444;
+}
+.highlight__content {
+  padding: 5px 10px;
+}
+.highlight__content .entry-content {
+  padding: 10px 0;
+}
+.highlight__content .entry-content .entry-title {
+  color: white;
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+
+.today-news {
+  font-size: 14px;
+  font-size: 14rem;
+  *zoom: 1;
+}
+.today-news:before, .today-news:after {
+  content: " ";
+  display: table;
+}
+.today-news:after {
+  clear: both;
+}
+.today-news__heading {
+  text-align: center;
+  font-size: 1.6em;
+  padding: 20px 0 5px 0;
+}
+.today-news__content {
+  padding: 5px 10px;
+}
+.today-news__content .entry-content {
+  padding: 10px 0;
+}
+.today-news__content .entry-content .entry-image {
+  width: 25%;
+  float: left;
+}
+.today-news__content .entry-content .entry-title {
+  padding-left: 30%;
+  color: #444444;
+}
+.today-news__content .entry-content .entry-meta {
+  padding-left: 30%;
+  font-size: 0.8em;
+  color: #aaaaaa;
+  padding-top: 10px;
+}
+
+.today-album {
+  font-size: 14px;
+  font-size: 14rem;
+  background: #333333;
+  *zoom: 1;
+}
+.today-album:before, .today-album:after {
+  content: " ";
+  display: table;
+}
+.today-album:after {
+  clear: both;
+}
+.today-album__heading {
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+  padding: 20px 0 5px 0;
+}
+.today-album__content {
+  padding: 5px 0px;
+}
+.today-album__content .entry-content {
+  padding: 10px 10px;
+  width: 50%;
+  float: left;
+}
+.today-album__content .entry-content .entry-image {
+  width: 100%;
+}
+.today-album__content .entry-content .entry-title {
+  color: #888888;
+  padding-top: 10px;
+}
+.today-album__content .entry-content .entry-meta {
+  font-size: 0.8em;
+  color: #aaaaaa;
+  padding-top: 10px;
+}
+
+.today-clips {
+  background: #444444;
+}

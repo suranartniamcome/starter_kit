@@ -1,0 +1,21 @@
+@mixin clearfix () {*zoom:1;&:before,&:after{content:" ";display:table;}&:after{clear:both;}}
+@mixin font-size ($sizeValue, $unit: 'rem') {
+	@if $unit == 'rem' {
+		font-size: $sizeValue+px; 
+		font-size: $sizeValue+rem;
+   	} @else {
+		font-size: $sizeValue+em; 
+   	}
+}
+@mixin font-face($fontName, $fileName, $path, $weight:normal, $style:normal) {
+    @font-face {
+        font-family: $fontName;
+        src: url($path+$fileName+'.eot');
+        src: url($path+$fileName+'.eot?') format('embedded-opentype'),
+             url($path+$fileName+'.woff') format('woff'),
+             url($path+$fileName+'.ttf') format('truetype'),
+             url($path+$fileName+'.svg#svgFontName') format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
