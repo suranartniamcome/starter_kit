@@ -16,7 +16,7 @@ gulp.task('sass', function () {
         .on('error', function (err) {
             console.log(err.message);
         })
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('app/cs'))
         .pipe(browserSync.reload({stream: true, once: true}));
 });
 
@@ -30,7 +30,7 @@ gulp.task('sass:build', function () {
         .on('error', function (err) {
             console.log(err.message);
         })
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/cs'))
 });
 
 // Start BrowserSync
@@ -50,8 +50,8 @@ gulp.task('fonts', function () {
 
 // Copy Images To Dist
 gulp.task('images', function () {
-    return gulp.src(['app/images/**/*'])
-        .pipe(gulp.dest('dist/images'));
+    return gulp.src(['app/di/**/*'])
+        .pipe(gulp.dest('dist/di'));
 });
 
 // Copy All Files At The Root Level (app)
@@ -69,8 +69,8 @@ gulp.task('html', function () {
 
 // Concat JS & Uglify Them
 gulp.task('js', function () {
-    return gulp.src(['app/js/**/*.js', ,'!app/js/script.js'])
-        .pipe($.concat('script.js'))
+    return gulp.src(['app/js/**/*.js', ,'!app/js/all.js'])
+        .pipe($.concat('all.js'))
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({stream: true, once: true}))
         .pipe($.uglify({preserveComments: 'some'}))

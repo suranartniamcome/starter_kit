@@ -1,0 +1,31 @@
+// Sass variables
+$textColor: (
+    'title': #444,
+    'title_highlight': #fff,
+    'footer': #aaa,
+    'today_clips': #888,
+    'section_title_clips': #fff
+);
+$BGColor: (
+    'highlight': #444,
+    'today-news': #fff,
+    'today-album': #333,
+    'today-clips': #444
+);
+$fontSize: (
+    'section': 14,
+    'section_title': 1.6,
+    'article_footer': 0.8,
+    'article_title_highlight': 1.2
+);
+
+// Sass functions to get variables
+@function getTextColor($block) {
+    @return map-get($textColor, $block);
+}
+@function getBGColor($block) {
+    @return map-get($BGColor, $block);
+}
+@function getFontSize($block) {
+    @return map-get($fontSize, $block);
+}
